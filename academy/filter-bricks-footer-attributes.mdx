@@ -1,0 +1,19 @@
+---
+title: "Filter: bricks/footer/attributes"
+date: 2022-07-29
+---
+
+Programmatically add HTML attributes to the `footer` tag.
+
+```php
+add_filter( 'bricks/footer/attributes', function( $attributes ) {
+  // Add 'data-is-footer' HTML attribute to footer with value 'y'
+  $attributes['data-is-footer'] = 'y';
+
+  return $attributes;
+} );
+```
+
+- [https://academy.bricksbuilder.io/article/filter-bricks-header-attributes/](https://academy.bricksbuilder.io/article/filter-bricks-header-attributes/)
+
+- [https://academy.bricksbuilder.io/article/filter-bricks-content-attributes/](https://academy.bricksbuilder.io/article/filter-bricks-content-attributes/)

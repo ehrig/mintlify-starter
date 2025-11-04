@@ -1,0 +1,28 @@
+---
+title: "Video element"
+date: 2022-08-07
+---
+
+The Video element in Bricks enables you to display responsive videos from several sources.
+
+![](images/bricks-video-element.png)
+
+Source dropdown options:
+
+- YouTube
+
+- Vimeo
+
+- Media
+
+- File URL
+
+- Dynamic Data
+
+**NOTE**: Enabling the "YouTube Preview Thumbnails" setting of the Perfmatters plugin might result in an empty space above the YouTube videos. A possible fix is adding the following CSS:
+
+```php
+.brxe-video .perfmatters-lazy-youtube {
+    margin-top: -56.25%;
+}
+```
